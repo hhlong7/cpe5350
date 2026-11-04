@@ -28,8 +28,8 @@ proc run_one {module files part n} {
 
     #vr clk
     create_clock -name vr_clk -period 10
-    set_in_delay -clock vr_clk 0 [all_inputs]
-    set_out_delay -clock vr_clk 0 [all_outputs]
+    set_input_delay -clock vr_clk 0 [all_inputs]
+    set_output_delay -clock vr_clk 0 [all_outputs]
 
     opt_design
     place_design
