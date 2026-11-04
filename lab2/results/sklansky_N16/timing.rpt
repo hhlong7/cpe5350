@@ -1,0 +1,633 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2026 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2026.1 (win64) Build 6511674 Tue Jun 16 11:02:23 MDT 2026
+| Date         : Tue Nov  3 18:58:10 2026
+| Host         : L-Zenbook running 64-bit major release  (build 9200)
+| Command      : report_timing_summary -file results/sklansky_N16/timing.rpt -max_paths 5
+| Design       : sklansky
+| Device       : 7z020-clg400
+| Speed File   : -1  PRODUCTION 1.12 2019-11-22
+| Design State : Routed
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Timing Summary Report
+
+------------------------------------------------------------------------------------------------
+| Timer Settings
+| --------------
+------------------------------------------------------------------------------------------------
+
+  Enable Multi Corner Analysis               :  Yes
+  Enable Pessimism Removal                   :  Yes
+  Pessimism Removal Resolution               :  Nearest Common Node
+  Enable Input Delay Default Clock           :  No
+  Enable Preset / Clear Arcs                 :  No
+  Disable Flight Delays                      :  No
+  Ignore I/O Paths                           :  No
+  Timing Early Launch at Borrowing Latches   :  No
+  Borrow Time for Max Delay Exceptions       :  Yes
+  Merge Timing Exceptions                    :  Yes
+  Inter-SLR Compensation                     :  Conservative
+
+  Corner  Analyze    Analyze    
+  Name    Max Paths  Min Paths  
+  ------  ---------  ---------  
+  Slow    Yes        Yes        
+  Fast    Yes        Yes        
+
+
+------------------------------------------------------------------------------------------------
+| Report Methodology
+| ------------------
+------------------------------------------------------------------------------------------------
+
+No report available as report_methodology has not been run prior. Run report_methodology on the current design for the summary of methodology violations.
+
+
+
+check_timing report
+
+Table of Contents
+-----------------
+1. checking no_clock (0)
+2. checking constant_clock (0)
+3. checking pulse_width_clock (0)
+4. checking unconstrained_internal_endpoints (0)
+5. checking no_input_delay (0)
+6. checking no_output_delay (0)
+7. checking multiple_clock (0)
+8. checking generated_clocks (0)
+9. checking loops (0)
+10. checking partial_input_delay (0)
+11. checking partial_output_delay (0)
+12. checking latch_loops (0)
+
+1. checking no_clock (0)
+------------------------
+ There are 0 register/latch pins with no clock.
+
+
+2. checking constant_clock (0)
+------------------------------
+ There are 0 register/latch pins with constant_clock.
+
+
+3. checking pulse_width_clock (0)
+---------------------------------
+ There are 0 register/latch pins which need pulse_width check
+
+
+4. checking unconstrained_internal_endpoints (0)
+------------------------------------------------
+ There are 0 pins that are not constrained for maximum delay.
+
+ There are 0 pins that are not constrained for maximum delay due to constant clock.
+
+
+5. checking no_input_delay (0)
+------------------------------
+ There are 0 input ports with no input delay specified.
+
+ There are 0 input ports with no input delay but user has a false path constraint.
+
+
+6. checking no_output_delay (0)
+-------------------------------
+ There are 0 ports with no output delay specified.
+
+ There are 0 ports with no output delay but user has a false path constraint
+
+ There are 0 ports with no output delay but with a timing clock defined on it or propagating through it
+
+
+7. checking multiple_clock (0)
+------------------------------
+ There are 0 register/latch pins with multiple clocks.
+
+
+8. checking generated_clocks (0)
+--------------------------------
+ There are 0 generated clocks that are not connected to a clock source.
+
+
+9. checking loops (0)
+---------------------
+ There are 0 combinational loops in the design.
+
+
+10. checking partial_input_delay (0)
+------------------------------------
+ There are 0 input ports with partial input delay specified.
+
+
+11. checking partial_output_delay (0)
+-------------------------------------
+ There are 0 ports with partial output delay specified.
+
+
+12. checking latch_loops (0)
+----------------------------
+ There are 0 combinational latch loops in the design through latch input
+
+
+
+------------------------------------------------------------------------------------------------
+| Design Timing Summary
+| ---------------------
+------------------------------------------------------------------------------------------------
+
+    WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+    -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+      4.600        0.000                      0                   17        0.837        0.000                      0                   17           NA           NA                      NA                    NA  
+
+
+All user specified timing constraints are met.
+
+
+------------------------------------------------------------------------------------------------
+| Clock Summary
+| -------------
+------------------------------------------------------------------------------------------------
+
+Clock   Waveform(ns)       Period(ns)      Frequency(MHz)
+-----   ------------       ----------      --------------
+vr_clk  {0.000 5.000}      10.000          100.000         
+
+
+------------------------------------------------------------------------------------------------
+| Intra Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+Clock             WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints     WPWS(ns)     TPWS(ns)  TPWS Failing Endpoints  TPWS Total Endpoints  
+-----             -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------     --------     --------  ----------------------  --------------------  
+vr_clk              4.600        0.000                      0                   17        0.837        0.000                      0                   17                                                                          
+
+
+------------------------------------------------------------------------------------------------
+| Inter Clock Table
+| -----------------
+------------------------------------------------------------------------------------------------
+
+From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Other Path Groups Table
+| -----------------------
+------------------------------------------------------------------------------------------------
+
+Path Group    From Clock    To Clock          WNS(ns)      TNS(ns)  TNS Failing Endpoints  TNS Total Endpoints      WHS(ns)      THS(ns)  THS Failing Endpoints  THS Total Endpoints  
+----------    ----------    --------          -------      -------  ---------------------  -------------------      -------      -------  ---------------------  -------------------  
+
+
+------------------------------------------------------------------------------------------------
+| Timing Details
+| --------------
+------------------------------------------------------------------------------------------------
+
+
+---------------------------------------------------------------------------------------------------
+From Clock:  vr_clk
+  To Clock:  vr_clk
+
+Setup :            0  Failing Endpoints,  Worst Slack        4.600ns,  Total Violation        0.000ns
+Hold  :            0  Failing Endpoints,  Worst Slack        0.837ns,  Total Violation        0.000ns
+PW    :           NA  Failing Endpoints,  Worst Slack           NA  ,  Total Violation           NA
+---------------------------------------------------------------------------------------------------
+
+
+Max Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             4.600ns  (required time - arrival time)
+  Source:                 b[1]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[10]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vr_clk rise@10.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        5.375ns  (logic 0.724ns (13.469%)  route 4.651ns (86.531%))
+  Logic Levels:           4  (LUT4=1 LUT5=1 LUT6=2)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[1]
+                         net (fo=4, unset)            0.973     0.973    b[1]
+    SLICE_X14Y27         LUT4 (Prop_lut4_I3_O)        0.124     1.097 r  sum[7]_INST_0_i_4/O
+                         net (fo=1, routed)           0.670     1.767    sum[7]_INST_0_i_4_n_0
+    SLICE_X14Y27         LUT6 (Prop_lut6_I0_O)        0.124     1.891 f  sum[7]_INST_0_i_2/O
+                         net (fo=6, routed)           0.847     2.738    sum[7]_INST_0_i_2_n_0
+    SLICE_X13Y27         LUT5 (Prop_lut5_I1_O)        0.150     2.888 r  sum[13]_INST_0_i_2/O
+                         net (fo=6, routed)           1.188     4.076    sum[13]_INST_0_i_2_n_0
+    SLICE_X13Y26         LUT6 (Prop_lut6_I1_O)        0.326     4.402 r  sum[10]_INST_0/O
+                         net (fo=0)                   0.973     5.375    sum[10]
+                                                                      r  sum[10]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)    10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -5.375    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.600    <hidden>
+
+Slack (MET) :             4.773ns  (required time - arrival time)
+  Source:                 b[1]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[11]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vr_clk rise@10.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        5.202ns  (logic 0.746ns (14.341%)  route 4.456ns (85.659%))
+  Logic Levels:           4  (LUT4=1 LUT5=2 LUT6=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[1]
+                         net (fo=4, unset)            0.973     0.973    b[1]
+    SLICE_X14Y27         LUT4 (Prop_lut4_I3_O)        0.124     1.097 r  sum[7]_INST_0_i_4/O
+                         net (fo=1, routed)           0.670     1.767    sum[7]_INST_0_i_4_n_0
+    SLICE_X14Y27         LUT6 (Prop_lut6_I0_O)        0.124     1.891 f  sum[7]_INST_0_i_2/O
+                         net (fo=6, routed)           0.847     2.738    sum[7]_INST_0_i_2_n_0
+    SLICE_X13Y27         LUT5 (Prop_lut5_I1_O)        0.150     2.888 r  sum[13]_INST_0_i_2/O
+                         net (fo=6, routed)           0.993     3.881    sum[13]_INST_0_i_2_n_0
+    SLICE_X12Y26         LUT5 (Prop_lut5_I2_O)        0.348     4.229 r  sum[11]_INST_0/O
+                         net (fo=0)                   0.973     5.202    sum[11]
+                                                                      r  sum[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)    10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -5.202    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  4.773    <hidden>
+
+Slack (MET) :             5.195ns  (required time - arrival time)
+  Source:                 b[1]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[8]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vr_clk rise@10.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        4.780ns  (logic 0.724ns (15.147%)  route 4.056ns (84.853%))
+  Logic Levels:           4  (LUT3=1 LUT4=1 LUT5=1 LUT6=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[1]
+                         net (fo=4, unset)            0.973     0.973    b[1]
+    SLICE_X14Y27         LUT4 (Prop_lut4_I3_O)        0.124     1.097 r  sum[7]_INST_0_i_4/O
+                         net (fo=1, routed)           0.670     1.767    sum[7]_INST_0_i_4_n_0
+    SLICE_X14Y27         LUT6 (Prop_lut6_I0_O)        0.124     1.891 f  sum[7]_INST_0_i_2/O
+                         net (fo=6, routed)           0.847     2.738    sum[7]_INST_0_i_2_n_0
+    SLICE_X13Y27         LUT5 (Prop_lut5_I1_O)        0.150     2.888 r  sum[13]_INST_0_i_2/O
+                         net (fo=6, routed)           0.593     3.481    sum[13]_INST_0_i_2_n_0
+    SLICE_X13Y26         LUT3 (Prop_lut3_I2_O)        0.326     3.807 r  sum[8]_INST_0/O
+                         net (fo=0)                   0.973     4.780    sum[8]
+                                                                      r  sum[8]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)    10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -4.780    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  5.195    <hidden>
+
+Slack (MET) :             5.201ns  (required time - arrival time)
+  Source:                 b[1]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[9]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vr_clk rise@10.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        4.774ns  (logic 0.718ns (15.041%)  route 4.056ns (84.959%))
+  Logic Levels:           4  (LUT4=1 LUT5=2 LUT6=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[1]
+                         net (fo=4, unset)            0.973     0.973    b[1]
+    SLICE_X14Y27         LUT4 (Prop_lut4_I3_O)        0.124     1.097 r  sum[7]_INST_0_i_4/O
+                         net (fo=1, routed)           0.670     1.767    sum[7]_INST_0_i_4_n_0
+    SLICE_X14Y27         LUT6 (Prop_lut6_I0_O)        0.124     1.891 f  sum[7]_INST_0_i_2/O
+                         net (fo=6, routed)           0.847     2.738    sum[7]_INST_0_i_2_n_0
+    SLICE_X13Y27         LUT5 (Prop_lut5_I1_O)        0.150     2.888 r  sum[13]_INST_0_i_2/O
+                         net (fo=6, routed)           0.593     3.481    sum[13]_INST_0_i_2_n_0
+    SLICE_X13Y26         LUT5 (Prop_lut5_I4_O)        0.320     3.801 r  sum[9]_INST_0/O
+                         net (fo=0)                   0.973     4.774    sum[9]
+                                                                      r  sum[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)    10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -4.774    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  5.201    <hidden>
+
+Slack (MET) :             5.279ns  (required time - arrival time)
+  Source:                 a[12]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            cout
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Max at Slow Process Corner
+  Requirement:            10.000ns  (vr_clk rise@10.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        4.696ns  (logic 0.748ns (15.927%)  route 3.948ns (84.073%))
+  Logic Levels:           4  (LUT4=1 LUT5=2 LUT6=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  a[12]
+                         net (fo=3, unset)            0.973     0.973    a[12]
+    SLICE_X12Y27         LUT4 (Prop_lut4_I3_O)        0.152     1.125 r  sum[15]_INST_0_i_5/O
+                         net (fo=2, routed)           0.699     1.824    sum[15]_INST_0_i_5_n_0
+    SLICE_X12Y27         LUT5 (Prop_lut5_I3_O)        0.348     2.172 r  sum[15]_INST_0_i_2/O
+                         net (fo=1, routed)           0.689     2.861    sum[15]_INST_0_i_2_n_0
+    SLICE_X12Y27         LUT6 (Prop_lut6_I0_O)        0.124     2.985 r  sum[15]_INST_0_i_1/O
+                         net (fo=3, routed)           0.614     3.599    sum[15]_INST_0_i_1_n_0
+    SLICE_X12Y28         LUT5 (Prop_lut5_I4_O)        0.124     3.723 r  cout_INST_0/O
+                         net (fo=0)                   0.973     4.696    cout
+                                                                      r  cout
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)    10.000    10.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000    10.000    <hidden>
+                         clock pessimism              0.000    10.000    <hidden>
+                         clock uncertainty           -0.025     9.975    <hidden>
+                         output delay                -0.000     9.975    <hidden>
+  -------------------------------------------------------------------
+                         required time                          9.975    <hidden>
+                         arrival time                          -4.696    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  5.279    <hidden>
+
+
+
+
+
+Min Delay Paths
+--------------------------------------------------------------------------------------
+Slack (MET) :             0.837ns  (arrival time - required time)
+  Source:                 cin
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[1]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (vr_clk rise@0.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        0.862ns  (logic 0.042ns (4.871%)  route 0.820ns (95.129%))
+  Logic Levels:           1  (LUT5=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  cin
+                         net (fo=4, unset)            0.410     0.410    cin
+    SLICE_X56Y75         LUT5 (Prop_lut5_I2_O)        0.042     0.452 r  sum[1]_INST_0/O
+                         net (fo=0)                   0.410     0.862    sum[1]
+                                                                      r  sum[1]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         clock pessimism              0.000     0.000    <hidden>
+                         clock uncertainty            0.025     0.025    <hidden>
+                         output delay                -0.000     0.025    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -0.025    <hidden>
+                         arrival time                           0.862    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.837    <hidden>
+
+Slack (MET) :             0.837ns  (arrival time - required time)
+  Source:                 b[8]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[9]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (vr_clk rise@0.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        0.862ns  (logic 0.042ns (4.871%)  route 0.820ns (95.129%))
+  Logic Levels:           1  (LUT5=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[8]
+                         net (fo=4, unset)            0.410     0.410    b[8]
+    SLICE_X13Y26         LUT5 (Prop_lut5_I3_O)        0.042     0.452 r  sum[9]_INST_0/O
+                         net (fo=0)                   0.410     0.862    sum[9]
+                                                                      r  sum[9]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         clock pessimism              0.000     0.000    <hidden>
+                         clock uncertainty            0.025     0.025    <hidden>
+                         output delay                -0.000     0.025    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -0.025    <hidden>
+                         arrival time                           0.862    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.837    <hidden>
+
+Slack (MET) :             0.838ns  (arrival time - required time)
+  Source:                 a[11]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[11]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (vr_clk rise@0.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        0.863ns  (logic 0.043ns (4.981%)  route 0.820ns (95.019%))
+  Logic Levels:           1  (LUT5=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  a[11]
+                         net (fo=3, unset)            0.410     0.410    a[11]
+    SLICE_X12Y26         LUT5 (Prop_lut5_I0_O)        0.043     0.453 r  sum[11]_INST_0/O
+                         net (fo=0)                   0.410     0.863    sum[11]
+                                                                      r  sum[11]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         clock pessimism              0.000     0.000    <hidden>
+                         clock uncertainty            0.025     0.025    <hidden>
+                         output delay                -0.000     0.025    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -0.025    <hidden>
+                         arrival time                           0.863    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.838    <hidden>
+
+Slack (MET) :             0.838ns  (arrival time - required time)
+  Source:                 b[14]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[15]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (vr_clk rise@0.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        0.863ns  (logic 0.043ns (4.981%)  route 0.820ns (95.019%))
+  Logic Levels:           1  (LUT5=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  b[14]
+                         net (fo=2, unset)            0.410     0.410    b[14]
+    SLICE_X12Y28         LUT5 (Prop_lut5_I3_O)        0.043     0.453 r  sum[15]_INST_0/O
+                         net (fo=0)                   0.410     0.863    sum[15]
+                                                                      r  sum[15]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         clock pessimism              0.000     0.000    <hidden>
+                         clock uncertainty            0.025     0.025    <hidden>
+                         output delay                -0.000     0.025    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -0.025    <hidden>
+                         arrival time                           0.863    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.838    <hidden>
+
+Slack (MET) :             0.838ns  (arrival time - required time)
+  Source:                 a[7]
+                            (input port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Destination:            sum[7]
+                            (output port clocked by vr_clk  {rise@0.000ns fall@5.000ns period=10.000ns})
+  Path Group:             vr_clk
+  Path Type:              Min at Fast Process Corner
+  Requirement:            0.000ns  (vr_clk rise@0.000ns - vr_clk rise@0.000ns)
+  Data Path Delay:        0.863ns  (logic 0.043ns (4.981%)  route 0.820ns (95.019%))
+  Logic Levels:           1  (LUT5=1)
+  Input Delay:            0.000ns
+  Output Delay:           0.000ns
+  Clock Uncertainty:      0.025ns
+
+    Location             Delay type                Incr(ns)  Path(ns)    Netlist Resource(s)
+  -------------------------------------------------------------------    -------------------
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         input delay                  0.000     0.000    <hidden>
+                                                      0.000     0.000 r  a[7]
+                         net (fo=3, unset)            0.410     0.410    a[7]
+    SLICE_X13Y27         LUT5 (Prop_lut5_I0_O)        0.043     0.453 r  sum[7]_INST_0/O
+                         net (fo=0)                   0.410     0.863    sum[7]
+                                                                      r  sum[7]
+  -------------------------------------------------------------------    -------------------
+
+                         (clock vr_clk rise edge)     0.000     0.000 r  <hidden>
+                         ideal clock network latency
+                                                      0.000     0.000    <hidden>
+                         clock pessimism              0.000     0.000    <hidden>
+                         clock uncertainty            0.025     0.025    <hidden>
+                         output delay                -0.000     0.025    <hidden>
+  -------------------------------------------------------------------
+                         required time                         -0.025    <hidden>
+                         arrival time                           0.863    <hidden>
+  -------------------------------------------------------------------
+                         slack                                  0.838    <hidden>
+
+
+
+
+
+
