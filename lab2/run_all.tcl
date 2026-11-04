@@ -31,12 +31,16 @@ proc run_one {module files part n} {
     set_input_delay -clock vr_clk 0 [all_inputs]
     set_output_delay -clock vr_clk 0 [all_outputs]
 
+    report_utilization -hierarchical -file "${outdir}/hier_utilization.rpt"
+    write_verilog -mode design -force "${outdir}/post_synth_netlist.v"
+
     opt_design
     place_design
     route_design
 
     report_utilization -file "${outdir}/utilization.rpt"
     report_timing_summary -file "${outdir}/timing.rpt" -max_paths 5
+    set_switching_activity -toggle_rate 12.5 -static_probability 0.5 [get_nets -hierarchical]
     report_power -file "${outdir}/power.rpt"
 
     puts "Done: $module N=$n -> $outdir"
