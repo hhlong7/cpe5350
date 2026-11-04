@@ -8,7 +8,7 @@ module behavorial #(
     input logic cin,
     
     output logic [N-1:0] sum,
-    output logic cout,
+    output logic cout
 );
 
     assign {cout, sum} = a + b + cin;

@@ -20,7 +20,7 @@ module rca #(
     genvar i;
     generate
         for (i = 0; i < N; i++) begin : gen_fulladder
-            fulladder FA(.a(a[i]), .b(b[i]), .cin(cin), .sum(sum), .cout(carry[i+1]));
+            fulladder FA(.a(a[i]), .b(b[i]), .cin(carry[i]), .sum(sum[i]), .cout(carry[i+1]));
         end
     endgenerate
 
